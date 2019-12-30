@@ -2,6 +2,7 @@
 IoT based smart mailbox with arduino + RFID tags + Azure
 ----------------------------
 **Device Code**
+----------------------------
 REFERENCES - The PIR sensor code was based on  http://RandomNerdTutorials.com/pirsensor
 ------------------------
 This folder provides the code for the Arduino Mega 2560 with ESP8266 WiFi module, RC522 RFID reader and PIR sensor.

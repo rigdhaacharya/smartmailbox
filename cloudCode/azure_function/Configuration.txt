@@ -1,0 +1,2 @@
+This function can be deployed to Azure using Visual Studio 2017 with Azure functions extension by clicking Publish and setting
+up the resource group and function from Visual Studio.

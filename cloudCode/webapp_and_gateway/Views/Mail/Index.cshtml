@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TrainMailEdge.Models.MailItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Sender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Receiver)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SendDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiveDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PredictedSpam)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsSpam)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Receiver)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SendDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiveDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PredictedSpam)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsSpam)
+        </td>
+        <td>
+            @Html.ActionLink("Mark/Unmark Spam", "Edit", new {  id=item.Id  }) |
+           
+        </td>
+    </tr>
+}
+
+</table>

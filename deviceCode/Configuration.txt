@@ -1,0 +1,1 @@
+This code should be deployed to an Arduino Mega 2560 with RC522 RFID reader, PIR motion sensor and ESP8266 WiFi module.

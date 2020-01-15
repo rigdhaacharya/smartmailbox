@@ -1,5 +1,7 @@
-# smartmailbox
-IoT based smart mailbox with arduino + RFID tags + Azure
+----------------------------
+Intro
+---------------------------
+This project contains the code for setting up a smart mailbox with arduino and RFID tags then processing the incoming mail on the server with azure. On azure, we classify the incoming mail and send a notification to the user about the mail. 
 ----------------------------
 **Device Code**
 ----------------------------
